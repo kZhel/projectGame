@@ -1,0 +1,296 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    color:#364440;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url(../img/фон2.jpg);
+}
+.wrapper{
+    height: 100%;
+}
+main {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 100px;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fcfdfd;
+    border-bottom: 1px solid #e7e7e7;
+    height: 80px;
+    width: 100%;
+}
+
+.header button{
+    display: block;
+    margin-left: 30px;
+}
+.timer{
+    display: block;
+    margin-left: 40px;
+    width: 10em;
+    color: #120e35;
+}
+.gameStat{
+    display: block;
+    height: 30px;
+    width: auto;
+}
+#choose{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#okno {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    border: 3px solid #767679;
+    border-radius: 10px;
+    background-color: #fdfdff;
+    position: absolute;
+    left: 20%;
+}
+.side {
+    min-height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #3a6092;
+}
+
+.btn{
+    height: 40px;
+    background-color: #f1f0f0;
+    border:1px solid #969494;
+}
+.btn:hover{
+    background-color: #9e9e9e;
+    border:1px solid #969494;
+}
+.btn-primary{
+    background-color: #3a6092;
+    border:1px solid #03152c;
+}
+.btn-primary:hover{
+    background-color: #244775;
+    border:1px solid #03152c;
+}
+.btn-primary:active{
+    background-color: #244775;
+    border:1px solid #03152c;
+}
+.btn-primary:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: 0 none !important;
+    outline-color: transparent !important;
+}
+.btn-level{
+    margin-top: 2em;
+    width: 80%;
+    color: #f1f0f0;
+    background-color: #3a6092;
+    border:1px solid #03152c;
+}
+
+.btn-level:hover{
+    background-color: #244775;
+    border:1px solid #03152c;
+}
+.btn-start{
+    margin-top: 2em;
+    width: 30%;
+    color: #f1f0f0;
+    background-color: #3a6092;
+    border:1px solid #03152c;
+}
+
+.btn-start:hover{
+    background-color: #244775;
+    border:1px solid #03152c;
+}
+.btn-start:focus {
+    border: none !important;
+    box-shadow: none !important;
+    outline: 0 none !important;
+    outline-color: transparent !important;
+}
+.content {
+    padding: 20px 40px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    height: 80px;
+    margin-top: -80px;
+    background-color: #211c52;
+    color: #f1f0f0;
+}
+
+body.green{
+    background-image: url(../img/фон1.jpg);
+}
+body.green header{
+    background-color: #ebf8e9;
+    border-bottom: 1px solid #9edda6;
+}
+body.green .side{
+    background-color: #3a9246;
+}
+body.green .btn-primary{
+    background-color: #3a9246;
+    border:1px solid #16471c;
+}
+body.green .btn-primary:hover{
+    background-color: #3a9246;
+    border:1px solid #16471c;
+}
+body.green .btn-level{
+    background-color: #3a9246;
+    border:1px solid #16471c;
+}
+body.green .btn-level:hover{
+    background-color: #3a9246;
+    border:1px solid #16471c;
+}
+body.green .btn-start{
+    background-color: #3a9246;
+    border:1px solid #16471c;
+}
+body.green .btn-start:hover{
+    background-color: #3a9246;
+    border:1px solid #16471c;
+}
+body.green .footer {
+    background-color: #035007;
+    color: #f1f0f0;
+}
+
+#timer{
+    font-size: 2em;
+    font-weight: bold;
+}
+#taskInfo, #awesome, #gameStatus {
+    font-size: 18px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+#thirdRow{
+    display: flex;
+    width: 100%;
+}
+#boxlevel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.game_cell {
+    text-align: center;
+    width: 115px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 10px;
+}   
+.game_cell:hover {
+    opacity: 0.7;
+}
+.game_cell.active {
+    background-color: rgb(1, 158, 14);
+}
+
+#animation1 {
+    width: 200px;
+    height: 200px;
+}
+#animation2 {
+    width: 200px;
+    height: 200px;
+}
+.animate1{
+    background-image: url(../img/завершение.png);
+    background-size: cover;
+    animation: endMove .7s linear alternate infinite;
+}
+.animate2{
+    background-image: url(../img/часы.png);
+    background-size: cover;
+    animation: shake .5s linear alternate infinite;
+}
+#img_list{
+    position: relative;
+    
+}
+.imgBlock{
+    height: 450px;
+    width: 25%;
+}
+.checkImg{
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    border:3px solid #069e17;
+}
+
+.thirdLImg{
+    position: absolute;
+}
+    
+@keyframes endMove {
+    100% {
+      transform: translateX(-30px);    
+    }
+}
+@keyframes shake {
+    0% {transform:rotate(-25deg)}
+    50%{transform:rotate(0deg)}
+    100%{transform:rotate(25deg)}}
+    
+/* .tasks__title {
+    margin: 50px 0 20px 0;
+      
+    text-align: center;
+    text-transform: uppercase;
+    }
+      
+      .tasks__list {
+        margin: 0;
+        padding: 0;
+      
+        list-style: none;
+      }
+      
+      .tasks__item {
+        transition: background-color 0.5s;
+        margin-bottom: 10px;
+        padding: 5px;
+      
+        text-align: center;
+        border: 2px dashed #b2d9d0;
+        border-radius: 10px;
+        cursor: move;
+        background-color: #dff2ef;
+      
+        transition: background-color 0.5s;
+      }
+      
+      .tasks__item:last-child {
+        margin-bottom: 0;
+      }
+      
+      .selected {
+        opacity: 0.6;
+      } */
